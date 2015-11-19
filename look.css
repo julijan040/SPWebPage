@@ -11,13 +11,15 @@
 .middleDiv
 {
     text-align: center;
-    padding: 52%;
+    padding: 5%;
     background-color: #f2f2f2;
 
 }
+
 .downDiv
 {
-    padding: 55%;
+    width: 100%;
+    height: 450px;
 }
 
 #logoImage
@@ -44,6 +46,8 @@
     display: inline-block;
     text-align: center;
 }
+
+
 
 body {
     font-family: 'Lora', serif;

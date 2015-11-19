@@ -1,5 +1,9 @@
-//sliding navigation
+
 $(document).ready(function() {
+
+
+
+    //sliding navigation
     $('a[href*=#]').each(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
             && location.hostname == this.hostname
