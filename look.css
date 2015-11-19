@@ -1,19 +1,23 @@
 .upDiv
 {
-    text-align: center;
+    background:url('sprites/logo.jpg') 100% 100% no-repeat fixed;
+    color: #fff;
+    height: 25%;
+    margin: 0;
+    padding: 12% 0 12% 0;
+    background-size: cover;
 }
+
 .middleDiv
 {
     text-align: center;
-    padding: 2%;
-
-
+    padding: 52%;
     background-color: #f2f2f2;
 
 }
 .downDiv
 {
-    padding: 5%;
+    padding: 55%;
 }
 
 #logoImage
@@ -46,3 +50,4 @@ body {
     background-color: #b3b3b3;
 
 }
+
