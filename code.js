@@ -1,7 +1,4 @@
-
 $(document).ready(function() {
-
-
 
     //sliding navigation
     $('a[href*=#]').each(function() {

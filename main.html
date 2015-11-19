@@ -16,38 +16,63 @@
     <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
     <script src="code.js"></script>
     <script type="text/javascript" src="library/backgroundVideo.js"></script>
-
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-
     <!-- SOURCE -->
 
 </head>
 <body>
 
+<header>
+    <p id="logoName">Z W I T T E R</p>
+</header>
 
 <div class="upDiv">
+
+    <div id="video-wrap" class="video-wrap">
+
+
+        <video preload="metadata" autoplay="" loop="" id="my-video">
+            <source src="video/backGroundVideo.mp4" type="video/mp4">
+        </video>
+
+
+        <div class="content-overlay">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="usr">Name:</label>
+                            <input type="text" class="form-control" id="usr">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control" id="pwd">
+                        </div>
+                    </div>
+                </div>
+            <div/>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+<div class="middleDiv">
+
+    <a href="#downDivID" class="active" title="Next Section" id="register" >Register now!</a>
+</div>
+
+<div class="downDiv" id="downDivID">
     <h1 class="text-center">TWITTER</h1>
 </div>
 
-<div class="middleDiv">
-    <label for="usr" id="labelForUsername">Username</label>
-    <br/>
-    <input type="text" class="form-control" id="usr">
-    <br/>
-    <label for="pas" id="labelForPassword">Password</label>
-    <br/>
-    <input type="text" class="form-control" id="pas">
-    <br/>
-    <a href="#downDivID" class="active" title="Next Section" >Register</a>
-</div>
-
-<div class="downDiv">
-    <div id="video-wrap">
-        <video id="my-video" preload="metadata" autoplay loop>
-            <source src="videos/test_video.mp4" type="video/mp4">
-        </video>
-    </div>
-</div>
 
 
 <script type="text/javascript" src="library/backgroundVideo.js"></script>
@@ -55,12 +80,16 @@
     $(document).ready(function() {
         $('#my-video').backgroundVideo({
             pauseVideoOnViewLoss: false,
-            $videoWrap: $('#video-wrap'),
-            $outerWrap: $('.downDiv')
+            parallaxOptions: {
+                effect: 1.9
+            }
         });
     });
 </script>
 
+<footer>
+<p id="add">Free Stock videos by <a href="http://Videezy.com">Videezy</a></p>
+</footer>
 
 </body>
 </html>
