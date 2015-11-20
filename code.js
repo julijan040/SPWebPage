@@ -21,4 +21,24 @@ $(document).ready(function() {
         }
     });
 
+    $('.form-control').keypress(function() {
+
+        var textLength = $(this).val().length;
+
+        if(textLength < 20) {
+            // Do noting
+        } else if (textLength < 40) {
+            $(this).css('font-size', '85%');
+        } else if (textLength > 40) {
+            $(this).css('font-size', '70%');
+        }
+    });
+
+    jQuery('.form-control').fitText();
+
+
+});
+
+$(window).on('beforeunload', function(){
+    $(window).scrollTop(0);
 });

@@ -106,4 +106,9 @@ textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
     outline: 0 none;
 }
 
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+
 

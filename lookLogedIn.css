@@ -1,0 +1,68 @@
+#logo
+{
+    margin: 0 auto;
+}
+
+#saySomething
+{
+    margin: 0 auto;
+    margin-bottom: 2%;
+}
+
+#usr
+{
+    margin: 0 auto;
+    width: 40%;
+    border-radius: 0px;
+}
+
+.btn
+{
+    height: 150%;
+    width: 50%;
+    border-radius: 0px;
+    margin: 0 auto;
+}
+
+#Search
+{
+    float: right;
+}
+
+#Post
+{
+    float: left;
+}
+
+#whatOtherSay
+{
+    padding: 25%;
+    border-style: solid;
+    border-color: #3e4242;
+    border-width: 10px;
+}
+
+#add
+{
+    text-align: center;
+}
+
+body
+{
+    height: 100%;
+    margin: 0;
+    font-family: 'Lora', serif;
+    background-color: #b4d0e4;
+}
+
+
+textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
+    border-color: #b4d0e4;
+    box-shadow: 0 1px 1px #b4d0e4 inset, 0 0 8px #b4d0e4;
+    outline: 0 none;
+}
+
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
