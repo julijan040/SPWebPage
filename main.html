@@ -8,56 +8,50 @@
     <title>Zwitter</title>
 
     <!-- SOURCE -->
-    <link href="library/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="library/bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="library/jquery-1.11.3.min.js"></script>
-    <script src="library/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="library/bootstrap-3.3.5-dist/js/bootstrap.js"></script>
     <link rel="stylesheet" type="text/css" href="look.css">
     <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
     <script src="code.js"></script>
+    <script src="library/jquery.fittext.js"></script>
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <!-- SOURCE -->
 
 </head>
+
 <body>
+
 
 <header>
     <img class="img-responsive" src="sprites/FoodSopaLogo.png" alt="Chania" id="logo">
 </header>
 
 <div class="upDiv">
-
     <div class="form-group">
-        <label for="usr">Name:</label>
-        <input type="text" class="form-control" id="usr">
-        <label for="pwd">Password:</label>
-        <input type="password" class="form-control" id="pwd">
+        <input type="text" class="form-control" id="usr" placeholder="Username">
+        <input type="password" class="form-control" id="pwd" placeholder="Password">
         <a href="#" class="btn btn-info" id="linkButton" role="button">Login</a>
+        <a href="#downDivID" class="btn btn-info" id="linkButton" role="button">Register</a>
     </div>
-
-
-
-
 </div>
 
-
-
-<div class="middleDiv">
-
-    <a href="#downDivID" class="active" title="Next Section" id="register" >Register now!</a>
-</div>
 
 <div class="downDiv" id="downDivID">
-    <h1 class="text-center">TWITTER</h1>
+    <div class="form-group">
+        <input type="text" class="form-control" id="usr" placeholder="Username">
+        <input type="password" class="form-control" id="pwd" placeholder="Password">
+        <input type="password" class="form-control" id="pwd" placeholder="Confirm Password">
+        <a href="#" class="btn btn-info" id="linkButton" role="button">Register!</a>
+    </div>
 </div>
-
-
 
 
 <footer>
-    <p id="add">Free Stock videos by <a href="http://Videezy.com">Videezy</a></p>
     <p id="add">Strajnar Julijan 2015</p>
 </footer>
+
 
 </body>
 </html>

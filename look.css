@@ -15,77 +15,56 @@ header
 {
     background:url('sprites/new-york.jpg') 100% 100% no-repeat fixed;
     color: #fff;
-    margin: 0;
-    padding: 15% 0 24% 0;
     background-size: cover;
     text-align:center;
-}
 
-label
-{
-    text-align: center;
-    line-height: 150%;
-    padding: 2%;
-    font-size: 300%;
-    color: whitesmoke;
+
 }
 
 .form-group
 {
     margin: 0 auto;
+    padding: 20%;
 }
 
 .form-control
 {
-    display: block;
-    text-align: center;
-    line-height: 200%;
     height: 150%;
     width: 50%;
-    padding: 2%;
     font-size: 200%;
     margin: 0 auto;
+    border-radius: 0px;
 }
 
 .btn {
-    padding: 5% 15%;
-    border: 0 none;
-    font-weight: 100;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin: 5%;
-    background-color: #b4d0e4;
+    height: 150%;
+    width: 50%;
+    border-radius: 0px;
+    margin: 0;
+
 }
 
 .middleDiv
 {
-    text-align: center;
-}
-
-#register
-{
-    text-align: center;
-    color: #3e4242;
-    font-size: 500%;
-    font-weight: 600;
+    padding: 2%;
 }
 
 .downDiv
 {
-    background:url('sprites/logo.jpg') 100% 100% no-repeat fixed;
+    background:url('sprites/new-york.jpg') 100% 100% no-repeat fixed;
     color: #fff;
-    height: 1000px;
-    margin: 0;
-    padding: 12% 0 12% 0;
     background-size: cover;
+    text-align:center;
 
 }
 
 footer
 {
+
     font-family: 'Lora', serif;
-    padding: 2%;
     background-color: #b4d0e4;
+
+    height: 60px;
 
 }
 
@@ -93,6 +72,7 @@ footer
 {
     text-align: center;
     color: #3e4242;
+    padding: 2%;
 }
 
 
@@ -100,8 +80,8 @@ footer
 
 body
 {
-    width: 100%;
     height: 100%;
+    margin: 0;
     font-family: 'Lora', serif;
     background-color: #b4d0e4;
 }
@@ -120,19 +100,10 @@ a:link, a:visited, a:hover, a:active {
     text-decoration: none;
 }
 
-
-#video-container {
-    top:0%;
-    left:0%;
-    height:100%;
-    width:100%;
-    overflow: hidden;
-}
-
-video
-{
-    position:relative;
-    z-index:0;
+textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
+    border-color: #b4d0e4;
+    box-shadow: 0 1px 1px #b4d0e4 inset, 0 0 8px #b4d0e4;
+    outline: 0 none;
 }
 
 
