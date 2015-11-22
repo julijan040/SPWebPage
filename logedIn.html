@@ -9,6 +9,8 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="library/jquery-1.11.3.min.js"></script>
     <script src="library/bootstrap-3.3.5-dist/js/bootstrap.js"></script>
+    <script src="library/jquery.maxlength.min.js"></script>
+    <script src="code2.js"></script>
     <link rel="stylesheet" type="text/css" href="lookLogedIn.css">
     <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -24,26 +26,117 @@
 
 <div id="saySomething">
 
-    <input type="text" class="form-control" id="usr" placeholder="Express yourself or search people!">
+    <div class="form-group">
+        <textarea class="form-control" rows="1" onkeyup="textAreaAdjust(this)" id="inputPostOrSearch" placeholder="Express yourself or search people!"></textarea>
+    </div>
+
+    <br>
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-4">
                 <a href="#" class="btn btn-primary center-block" id="Search" role="button">Search</a>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-4">
+                <a href="#" class="btn btn-primary center-block" id="Post" role="button">Post</a>
+            </div>
+            <div class="col-sm-4">
                 <a href="#" class="btn btn-primary center-block" id="Post" role="button">Post</a>
             </div>
         </div>
     </div>
-
-
-
 </div>
 
-<div id="whatOtherSay">
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3" id="settings">
 
+            <ul>
+                <li>
+                    <p id="logedInAs">Julijan Strajnar</p>
+                </li>
+                <li>
+                    <img class="img-responsive" src="sprites/profila.png" alt="Chania" id="loginPic">
+
+                </li>
+                <li>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img class="img-responsive" src="sprites/AccPic.png" alt="Chania" id="changePic">
+                        </div>
+                        <div class="col-sm-6">
+                            <img class="img-responsive" src="sprites/AccPic.png" alt="Chania" id="changeName">
+                        </div>
+                    </div>
+
+
+                </li>
+                <li>
+                    <img class="img-responsive" src="sprites/logout.png" alt="Chania" id="logOutPic">
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-sm-9" id="whatOthersSay">
+            <ul>
+                <li class="post">
+
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <img class="img-responsive" src="sprites/AccPic.png" alt="Chania" id="postPicture">
+                        </div>
+                        <div class="col-sm-10">
+                            <p id="postText">dasdasdasdsdasdasdasda</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="post">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <img class="img-responsive" src="sprites/AccPic.png" alt="Chania" id="postPicture">
+                        </div>
+                        <div class="col-sm-10">
+                            <p id="postText">dasdasdasdsdasdasdasda</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="post">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <img class="img-responsive" src="sprites/AccPic.png" alt="Chania" id="postPicture">
+                        </div>
+                        <div class="col-sm-10">
+                            <p id="postText">dasdasdasdsdasdasdasda</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="post">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <img class="img-responsive" src="sprites/AccPic.png" alt="Chania" id="postPicture">
+                        </div>
+                        <div class="col-sm-10">
+                            <p id="postText">dasdasdasdsdasdasdasda</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="post">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <img class="img-responsive" src="sprites/AccPic.png" alt="Chania" id="postPicture">
+                        </div>
+                        <div class="col-sm-10">
+                            <p id="postText">dasdasdasdsdasdasdasda</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
+
+
 
 <footer>
     <p id="add">Strajnar Julijan 2015</p>
