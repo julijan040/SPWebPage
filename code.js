@@ -1,4 +1,4 @@
-application/x-javascript
+var passDoNotMatch = false;
 
 $(document).ready(function() {
 
@@ -36,6 +36,43 @@ $(document).ready(function() {
         }
     });
 
+    $('#confirmPass').on('input', function() {
+        var val = $('#pass').val();
+
+        if(val != $('#confirmPass').val() && !passDoNotMatch)
+        {
+            $('#register1').append(
+                '<img class="img-responsive" src="sprites/passDoNotMatch.png" alt="Chania" id="cantRegister">'
+            );
+            passDoNotMatch=true;
+        }
+        else if(passDoNotMatch && val == $('#confirmPass').val())
+        {
+            $('#cantRegister').remove();
+            passDoNotMatch=false;
+        }
+    });
+
+    $('#pass').on('input', function() {
+        var val = $('#confirmPass').val();
+
+        if(val != $('#pass').val() && !passDoNotMatch)
+        {
+            $('#register1').append(
+                '<img class="img-responsive" src="sprites/passDoNotMatch.png" alt="Chania" id="cantRegister">'
+            );
+            passDoNotMatch=true;
+        }
+        else if(passDoNotMatch && val == $('#pass').val())
+        {
+            $('#cantRegister').remove();
+            passDoNotMatch=false;
+        }
+    });
+
+
+
+
 
 
 });
@@ -43,3 +80,7 @@ $(document).ready(function() {
 $(window).on('beforeunload', function(){
     $(window).scrollTop(0);
 });
+
+
+
+

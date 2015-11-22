@@ -35,6 +35,8 @@ header
 {
     outline: 5px solid #cd3232;
     margin: 0 auto;
+    width: 10%;
+    height: 10%;
 }
 
 .btn

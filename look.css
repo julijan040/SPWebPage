@@ -59,6 +59,12 @@ header
 
 }
 
+#cantRegister
+{
+    outline: 5px solid #cd3232;
+    margin: 0 auto;
+}
+
 footer
 {
 
