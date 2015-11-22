@@ -27,7 +27,7 @@
 <div id="saySomething">
 
     <div class="form-group">
-        <textarea class="form-control" rows="1" onkeyup="textAreaAdjust(this)" id="inputPostOrSearch" maxlength="50" placeholder="Express yourself or search people!"></textarea>
+        <textarea class="form-control" rows="1" onkeyup="textAreaAdjust(this)" id="inputPostOrSearch" maxlength="250" placeholder="Express yourself or search people!"></textarea>
 
     </div>
 
@@ -43,9 +43,9 @@
             <div class="col-sm-4">
                 <a href="#" class="btn btn-primary center-block" id="Post" role="button">Post</a>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4" id="postAttachDiv">
                     <a href="#" class="btn btn-primary center-block" id="AttachDiv" role="button">
-                        Attach
+                        Attach picture
                         <input type="file" class="btn btn-primary center-block" name="fileToUpload" id="Attach">
                     </a>
 
@@ -68,7 +68,7 @@
 
                 </li>
                 <li>
-                    <div>
+                    <div id="chanePicDiv1">
                             <a href="#" class="btn btn-primary center-block" id="changePicDiv" role="button">
                                 Change picture
                                 <input type="file" class="btn btn-primary center-block" name="fileToUpload" id="changePic">
@@ -90,7 +90,31 @@
 
                     <div class="row">
                         <div class="col-sm-2">
-                            <img class="img-responsive" src="sprites/AccPic.png" alt="Chania" id="postPicture">
+                            <img class="img-responsive" src="sprites/testImages/testImage1.png" alt="Chania" id="postPicture">
+                            <p id="posterName">David Preproga</p>
+                        </div>
+                        <div class="col-sm-10">
+                            <p id="postText">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="post">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <img class="img-responsive" src="sprites/testImages/testImage2.png" alt="Chania" id="postPicture">
+                            <p id="posterName">Rdeča Kapica</p>
+                        </div>
+                        <div class="col-sm-10">
+                            <p id="postText">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                            <img class="img-responsive" src="sprites/testImages/testImage4.png" alt="Chania" id="postOtherUserPicrute">
+                        </div>
+                    </div>
+                </li>
+                <li class="post">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <img class="img-responsive" src="sprites/testImages/testImage3.png" alt="Chania" id="postPicture">
+                            <p id="posterName">Tvoja preproga</p>
                         </div>
                         <div class="col-sm-10">
                             <p id="postText">dasdasdasdsdasdasdasda</p>
@@ -100,37 +124,8 @@
                 <li class="post">
                     <div class="row">
                         <div class="col-sm-2">
-                            <img class="img-responsive" src="sprites/AccPic.png" alt="Chania" id="postPicture">
-                        </div>
-                        <div class="col-sm-10">
-                            <p id="postText">dasdasdasdsdasdasdasda</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="post">
-                    <div class="row">
-                        <div class="col-sm-2">
-                            <img class="img-responsive" src="sprites/AccPic.png" alt="Chania" id="postPicture">
-                        </div>
-                        <div class="col-sm-10">
-                            <p id="postText">dasdasdasdsdasdasdasda</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="post">
-                    <div class="row">
-                        <div class="col-sm-2">
-                            <img class="img-responsive" src="sprites/AccPic.png" alt="Chania" id="postPicture">
-                        </div>
-                        <div class="col-sm-10">
-                            <p id="postText">dasdasdasdsdasdasdasda</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="post">
-                    <div class="row">
-                        <div class="col-sm-2">
-                            <img class="img-responsive" src="sprites/AccPic.png" alt="Chania" id="postPicture">
+                            <img class="img-responsive" src="sprites/testImages/testImage4.png" alt="Chania" id="postPicture">
+                            <p id="posterName">Zmaj 123456</p>
                         </div>
                         <div class="col-sm-10">
                             <p id="postText">dasdasdasdsdasdasdasda</p>

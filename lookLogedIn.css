@@ -32,7 +32,7 @@ header
     padding: 0;
 }
 
-#maxLength
+#maxLength, #cantChangeProfPic, #cantChangePostPic
 {
     outline: 5px solid #cd3232;
     margin: 0 auto;
@@ -154,38 +154,79 @@ input
     border-color: #3e4242;
     border-width: 10px;
     padding: 0;
-    margin-bottom: 5%;
 }
 
 #postText
 {
     margin: 0 auto;
-    padding:5%;
-    background: white;
+    height: 100%;
+    width: 100%;
+    outline: 5px solid #3e4242;
+    background: #3e4242;
+    word-wrap: break-word;
+    font-size: 125%;
+
 }
 
 #postPicture
 {
     margin: 0 auto;
     padding: 0;
+    outline: 5px solid #3e4242;
+
+}
+
+#posterName
+{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    font-weight: bold;
+    color: #3e4242;
+    outline: 5px solid #3e4242;
+    background: white;
+
+}
+
+#postOtherUserPicrute
+{
+    margin: 0 auto;
+    padding-left: 43%;
+    padding-right: 43%;
+    outline: 5px solid #3e4242;
+    background: #3e4242;
 }
 
 .post
 {
-    padding: 5%;
+    padding: 2%;
+}
+
+
+ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 footer
 {
     padding: 2%;
     background-color: #b4d0e4;
+    outline: 10px solid #3e4242;
 }
 
 #add
 {
+    font-size: 125%;
+    font-weight: 600;
     text-align: center;
     color: #3e4242;
 }
+
 
 body
 {
@@ -201,6 +242,8 @@ body
 }
 
 
+
+
 textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
     border-color: #b4d0e4;
     box-shadow: 0 1px 1px #b4d0e4 inset, 0 0 8px #b4d0e4;
@@ -212,25 +255,23 @@ textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
     text-align: center;
 }
 
-ul
-{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
 
 @media (max-width: 300px) {
     #inputPostOrSearch { font-size: 100%; }
+    #postText { font-size: 100%; }
 }
 
 @media (min-width: 500px) {
     #inputPostOrSearch { font-size: 120%; }
+    #postText { font-size: 120%; }
 }
 
 @media (min-width: 700px) {
     #inputPostOrSearch { font-size: 160%; }
+    #postText { font-size: 130%; }
 }
 
 @media (min-width: 1200px) {
     #inputPostOrSearch { font-size: 200%; }
+    #posterName { font-size: 100%; }
 }
