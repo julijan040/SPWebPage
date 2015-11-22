@@ -29,6 +29,13 @@ header
     border-style: solid #b4d0e4;
     resize: none;
     overflow: hidden;
+    padding: 0;
+}
+
+#maxLength
+{
+    outline: 5px solid #cd3232;
+    margin: 0 auto;
 }
 
 .btn
@@ -40,14 +47,20 @@ header
     outline: 5px solid #b4d0e4;
 }
 
-#Search
+#Search, #Post
 {
     font-size: 150%;
 }
 
-#Post
+#Attach
 {
     font-size: 150%;
+    opacity: 0;
+}
+
+input
+{
+    padding: 0;
 }
 
 #content

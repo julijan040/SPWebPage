@@ -27,7 +27,8 @@
 <div id="saySomething">
 
     <div class="form-group">
-        <textarea class="form-control" rows="1" onkeyup="textAreaAdjust(this)" id="inputPostOrSearch" placeholder="Express yourself or search people!"></textarea>
+        <textarea class="form-control" rows="1" onkeyup="textAreaAdjust(this)" id="inputPostOrSearch" maxlength="50" placeholder="Express yourself or search people!"></textarea>
+
     </div>
 
     <br>
@@ -37,12 +38,15 @@
             <div class="col-sm-4">
                 <a href="#" class="btn btn-primary center-block" id="Search" role="button">Search</a>
             </div>
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+
             <div class="col-sm-4">
                 <a href="#" class="btn btn-primary center-block" id="Post" role="button">Post</a>
             </div>
             <div class="col-sm-4">
-                <a href="#" class="btn btn-primary center-block" id="Post" role="button">Post</a>
+                    <input type="file" class="btn btn-primary center-block" name="fileToUpload" id="Attach">
             </div>
+            </form>
         </div>
     </div>
 </div>
