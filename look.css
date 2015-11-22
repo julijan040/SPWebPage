@@ -1,0 +1,133 @@
+header
+{
+    font-family: 'Lora', serif;
+    font-size: 500%;
+    background-color: #b4d0e4;
+    text-align: center;
+}
+
+#logo
+{
+    margin: 0 auto;
+}
+
+.upDiv
+{
+    background:url('sprites/new-york.jpg') 100% 100% no-repeat fixed;
+    color: #fff;
+    background-size: cover;
+    text-align:center;
+
+
+}
+
+.form-group
+{
+    margin: 0 auto;
+    padding: 10% 10% 40% 10%;
+}
+
+.form-control
+{
+    height: 150%;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 0px;
+    padding: 2%;
+}
+
+.btn {
+    padding: 2%;
+    height: 150%;
+    width: 50%;
+    border-radius: 0px;
+    margin: 0;
+
+}
+
+.middleDiv
+{
+    padding: 2%;
+}
+
+.downDiv
+{
+    background:url('sprites/new-york.jpg') 100% 100% no-repeat fixed;
+    color: #fff;
+    background-size: cover;
+    text-align:center;
+
+}
+
+footer
+{
+
+    font-family: 'Lora', serif;
+    background-color: #b4d0e4;
+
+    height: 60px;
+
+}
+
+#add
+{
+    text-align: center;
+    color: #3e4242;
+    padding: 2%;
+}
+
+
+
+
+body
+{
+    height: 100%;
+    margin: 0;
+    font-family: 'Lora', serif;
+    background-color: #b4d0e4;
+}
+
+
+::-moz-selection
+{
+    background: #687e97;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: #3e4242;
+    text-decoration: none;
+}
+
+textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
+    border-color: #b4d0e4;
+    box-shadow: 0 1px 1px #b4d0e4 inset, 0 0 8px #b4d0e4;
+    outline: 0 none;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+
+
+@media (max-width: 300px) {
+    .form-control { font-size: 100%; }
+    .btn { font-size: 100%; }
+}
+
+@media (min-width: 500px) {
+    .form-control { font-size: 120%; }
+    .btn { font-size: 120%; }
+}
+
+@media (min-width: 700px) {
+    .form-control { font-size: 160%; }
+    .btn { font-size: 160%; }
+}
+
+@media (min-width: 1200px) {
+    .form-control { font-size: 200%; }
+    .btn { font-size: 200%; }
+}
+
+
