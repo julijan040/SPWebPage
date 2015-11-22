@@ -52,10 +52,23 @@ header
     font-size: 150%;
 }
 
+
+
 #Attach
 {
-    font-size: 150%;
     opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 15%;
+    width: 70%;
+    height: 100%;
+
+
+}
+
+#AttachDiv
+{
+    font-size: 150%;
 }
 
 input
@@ -99,7 +112,28 @@ input
     margin: 0 auto;
 }
 
-#changePic, #changeName
+#changePicDiv
+{
+    position: relative;
+    font-size: 150%;
+    outline: 5px solid #3e4242;
+}
+
+#changePic
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    float: left;
+    opacity: 0;
+    margin-bottom: 5%;
+    margin: 0 auto;
+    font-size: inherit;
+
+}
+
+
+#changeName
 {
     margin: 0 auto;
     outline: 5px solid #3e4242;
