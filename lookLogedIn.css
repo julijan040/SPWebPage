@@ -26,7 +26,6 @@ header
     margin: 0 auto;
     border-radius: 0px;
     font-size: 100%;
-    border-style: solid #b4d0e4;
     resize: none;
     overflow: hidden;
     padding: 0;
@@ -157,7 +156,7 @@ input
     margin-bottom: 5%;
 }
 
-#postText
+#postText1, #postText2, #postText3, #postText4
 {
     margin: 0 auto;
     height: 100%;
@@ -169,7 +168,7 @@ input
 
 }
 
-#postPicture
+#postPicture1, #postPicture2, #postPicture3, #postPicture4
 {
     margin: 0 auto;
     padding: 0;
@@ -177,7 +176,7 @@ input
 
 }
 
-#posterName
+#posterName1, #posterName2, #posterName3, #posterName4
 {
     position: relative;
     margin-left: auto;
@@ -259,20 +258,24 @@ textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
 
 @media (max-width: 300px) {
     #inputPostOrSearch { font-size: 100%; }
-    #postText { font-size: 100%; }
+    #postText1, #postText2, #postText3, #postText4 { font-size: 100%; }
+    #inputPostOrSearch { font-size: 100%; }
 }
 
 @media (min-width: 500px) {
     #inputPostOrSearch { font-size: 120%; }
-    #postText { font-size: 120%; }
+    #postText1, #postText2, #postText3, #postText4 { font-size: 120%; }
+    #inputPostOrSearch { font-size: 120%; }
 }
 
 @media (min-width: 700px) {
     #inputPostOrSearch { font-size: 160%; }
-    #postText { font-size: 130%; }
+    #postText1, #postText2, #postText3, #postText4 { font-size: 130%; }
+    #inputPostOrSearch { font-size: 130%; }
 }
 
 @media (min-width: 1200px) {
     #inputPostOrSearch { font-size: 200%; }
     #posterName { font-size: 100%; }
+    #inputPostOrSearch { font-size: 200%; }
 }

@@ -1,3 +1,5 @@
+application/x-javascript
+
 $(document).ready(function() {
 
     //sliding navigation

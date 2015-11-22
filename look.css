@@ -87,10 +87,7 @@ body
     background-color: #b4d0e4;
 }
 
-::selection
-{
-    background: #687e97; /* WebKit/Blink Browsers */
-}
+
 ::-moz-selection
 {
     background: #687e97;
@@ -125,7 +122,7 @@ textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
 
 @media (min-width: 700px) {
     .form-control { font-size: 160%; }
-    #.btn { font-size: 160%; }
+    .btn { font-size: 160%; }
 }
 
 @media (min-width: 1200px) {
