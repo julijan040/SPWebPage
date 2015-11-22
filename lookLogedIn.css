@@ -153,7 +153,8 @@ input
     border-style: solid;
     border-color: #3e4242;
     border-width: 10px;
-    padding: 0;
+    padding-bottom: 0;
+    margin-bottom: 5%;
 }
 
 #postText

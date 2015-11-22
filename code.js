@@ -34,7 +34,6 @@ $(document).ready(function() {
         }
     });
 
-    jQuery('.form-control').fitText();
 
 
 });

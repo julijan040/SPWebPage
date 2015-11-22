@@ -24,19 +24,20 @@ header
 .form-group
 {
     margin: 0 auto;
-    padding: 20%;
+    padding: 10% 10% 40% 10%;
 }
 
 .form-control
 {
     height: 150%;
     width: 50%;
-    font-size: 200%;
     margin: 0 auto;
     border-radius: 0px;
+    padding: 2%;
 }
 
 .btn {
+    padding: 2%;
     height: 150%;
     width: 50%;
     border-radius: 0px;
@@ -110,5 +111,26 @@ textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
     text-align: center;
 }
 
+
+
+@media (max-width: 300px) {
+    .form-control { font-size: 100%; }
+    .btn { font-size: 100%; }
+}
+
+@media (min-width: 500px) {
+    .form-control { font-size: 120%; }
+    .btn { font-size: 120%; }
+}
+
+@media (min-width: 700px) {
+    .form-control { font-size: 160%; }
+    #.btn { font-size: 160%; }
+}
+
+@media (min-width: 1200px) {
+    .form-control { font-size: 200%; }
+    .btn { font-size: 200%; }
+}
 
 
